@@ -1,0 +1,98 @@
+<html>
+
+
+
+
+<head><title>jschecker</title></head>
+
+<body>
+ 
+<img  id="example" src="blogimage/tech1.jpg" style=" height:500px; width:500px; position:absolute; top:40px; left:50px;">
+	  <img  id="example" src="blogimage/tech2.jpg" style="height:500px; width:500px; position:absolute; top:40px; left:50px;">
+	  <img  id="example" src="blogimage/edu.jpg" style="height:500px; width:500px; position:absolute; top:40px; left:50px;">
+	  <img  id="example" src="blogimage/travel.jpg"  style="height:500px; width:500px; position:absolute; top:40px; left:50px;">
+	  <img  id="example" src="blogimage/invest.jpg" style="height:500px; width:500px; position:absolute; top:40px; left:50px;"> 
+	 <p id="demo" style="position:absolute; top:60px; left:60px; font-size:100px; font-weight:bold; color:red; text-align:center;" > dont dare lekan he can do and undo</p>
+	
+	<!--<div id="cont" style=" position:absolute; top:500px; height:60px; width:60%;  left:250px; background-color:red;">-->
+	
+	 <div id="gre" style=" position:absolute; top:600px; left:250px; padding-top:px; height:30px; width:4%; border-radius:30px;  margin-left:px; background-color:#d3d3d3;">
+	 <div id="gc" style="margin-top:5px; margin-left:8px; text-align:center; left:px; padding-top:px; height:20px; width:60%; border-radius:30px;  margin-left:px; background-color:blue;"></div></div>
+	 <div id="gre" style=" position:absolute; top:600px; left:350px;padding-top:px; height:30px; width:4%; border-radius:30px;  margin-left:px; background-color:#d3d3d3;">
+	 <div id="gc" style="margin-top:5px; margin-left:8px; text-align:center; left:px; padding-top:px; height:20px; width:60%; border-radius:30px;  margin-left:px; background-color:blue;"></div></div>
+	 <div id="gre" style=" position:absolute; top:600px; left:450px;padding-top:px; height:30px; width:4%; border-radius:30px;  margin-left:px; background-color:#d3d3d3; "
+	 ><div id="gc" style="margin-top:5px; margin-left:8px; text-align:center; left:px; padding-top:px; height:20px; width:60%; border-radius:30px;  margin-left:px; background-color:blue;"></div></div>
+	 <div id="gre" style=" position:absolute; top:600px; left:550px;padding-top:px; height:30px; width:4%; border-radius:30px;  margin-left:px; background-color:#d3d3d3; ">
+	 <div id="gc" style="margin-top:5px; margin-left:8px; text-align:center; left:px; padding-top:px; height:20px; width:60%; border-radius:30px;  margin-left:px; background-color:blue;"></div></div>
+	 <div id="gre" style=" position:absolute; top:600px; left:650px;padding-top:px; height:30px; width:4%; border-radius:30px;  margin-left:px; background-color:#d3d3d3; ">
+	 <div id="gc" style="margin-top:5px; margin-left:8px; text-align:center; left:px; padding-top:px; height:20px; width:60%; border-radius:30px;  margin-left:px; background-color:blue;"></div></div>
+	 
+	 <!--</div>-->
+	 
+<script>
+
+
+ function wulo(){
+  let element = document.querySelectorAll("#example");
+   let gec = document.querySelectorAll("#gc");
+  let el = Array.from(element);
+  let na = Array.from(gec);
+   for(let i=0; i<el.length; i++){
+ el[i].style.visibility= "hidden";
+ na[i].style.background= "grey";
+ } 
+ //el[0].style.visibility= "visible";
+ 
+ 
+ setTimeout(()=>{
+ let element = document.querySelectorAll("#example");
+  let el = Array.from(element);
+   for(let i=0; i<el.length; i++){
+ el[i].style.visibility= "hidden"} 
+ el[0].style.visibility= "visible";
+ setTimeout(()=>{
+ let element = document.querySelectorAll("#example");
+  let el = Array.from(element);
+   for(let i=0; i<el.length; i++){
+ el[i].style.visibility= "hidden"} 
+ el[1].style.visibility= "visible";
+ 
+ setTimeout(()=>{
+ let element = document.querySelectorAll("#example");
+  let el = Array.from(element);
+   for(let i=0; i<el.length; i++){
+ el[i].style.visibility= "hidden"} 
+ el[2].style.visibility= "visible";
+ setTimeout(()=>{
+ let element = document.querySelectorAll("#example");
+  let el = Array.from(element);
+   for(let i=0; i<el.length; i++){
+ el[i].style.visibility= "hidden"} 
+ el[3].style.visibility= "visible";
+ setTimeout(()=>{
+ let element = document.querySelectorAll("#example");
+  let el = Array.from(element);
+   for(let i=0; i<el.length; i++){
+ el[i].style.visibility= "hidden"} 
+ el[4].style.visibility= "visible";
+ },2000)
+ },2000)
+ },2000)
+ },2000)
+ },2000);
+  }
+  
+  //wulo();
+  function r(){
+  wulo();
+  setTimeout(r,10000);
+  }
+  r();    
+	 
+	 
+// recursive polishing 
+
+
+</script>
+</body>
+</html>
